@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # redux-sample
 
 ## Project setup
@@ -27,3 +28,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# vue-redux
+>>>>>>> 2264749e6b473a83de0ef5574d5de2f99b95ef19
