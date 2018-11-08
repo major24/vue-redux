@@ -4,14 +4,18 @@
         :incrementBy=2
         @countUpdated="onChildButtonCountUpdated">
     </button-counter>
-    <br />
-    <p>capturing child click event via emit...</p>
-    <p>Curr Value: {{ updatedValue }}</p>
+    <p>capturing child click event via emit.... {{ updatedValue }}</p>
+    <hr />
+    
+    <p>trying with redux</p>
+    <button-counter-redux></button-counter-redux>
+
   </div>
 </template>
 
 <script>
 import ButtonCounter from '@/components/button-counter/ButtonCounter'
+import ButtonCounterRedux from '@/components/button-counter/ButtonCounterRedux'
 
 export default {
   methods: {
@@ -26,7 +30,7 @@ export default {
     }
   },
   components: {
-    ButtonCounter
+    ButtonCounter, ButtonCounterRedux
   }
 }
 </script>
