@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <header-page></header-page>
+      <nav-page></nav-page>
+      <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavPage from '@/components/header-nav/NavPage'
+import HeaderPage from '@/components/header-nav/HeaderPage'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+components: { NavPage, HeaderPage }
 }
 </script>
 
